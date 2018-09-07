@@ -38,7 +38,7 @@
                 <td>{{asset.value}}</td>
                 <td>
                     <div *ngIf="asset.employeeId">
-                        <a [routerLink]="['../employee', asset.employeeId , 'view' ]" >{{asset.employeeId}}</a>
+                        <a [routerLink]="['../employee', asset.employeeName , 'view' ]" >{{asset.employeeName}}</a>
                     </div>
                 </td>
                 <td class="text-right">
