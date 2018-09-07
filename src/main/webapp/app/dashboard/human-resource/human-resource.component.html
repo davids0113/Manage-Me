@@ -1,5 +1,3 @@
-<p>new version</p>
-
 <div>
     <h2 id="page-heading">
         <span>Open Separation Applications</span>
@@ -27,10 +25,8 @@
                     [routerLink]="['/separation-application', separationApplication.id, 'view' ]">{{separationApplication.id}}</a>
                 </td>
                 <td *ngIf="separationApplication.completedDate == null">
-                    <div *ngIf="separationApplication.employee">
                         <a
-                            [routerLink]="['../employee', separationApplication.employeeId, 'view' ]">{{separationApplication.employeeId}}</a>
-                    </div>
+                            [routerLink]="['../employee', separationApplication.employeeName, 'view' ]">{{separationApplication.employeeName}}</a>
                 </td>
                 <td *ngIf="separationApplication.completedDate == null">{{separationApplication.dateOfLeaving
                     | date:'mediumDate'}}
